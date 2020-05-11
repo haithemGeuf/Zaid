@@ -1,6 +1,6 @@
 /*
- * Copyright © 2019-2020 Djalel Chefrour
- * This file is part of Zaid.
+ * Copyright © 2019-2020 Djalel Chefrour and the Zaid project contributors.
+ * This file is part of Zaid project.
  *
  * Zaid is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,21 +20,32 @@ package com.djalel.android.zaid;
 
 import android.app.Application;
 
+import com.djalel.libjfarayid.WarathahInput;
+import com.djalel.libjfarayid.Massala;
+
 public class ZaidApplication extends Application {
-    WarathaInput mInput = new WarathaInput();
-    Massala massala;
+    private WarathahInput mInput = new WarathahInput();
+    private Massala mMassala;
 
     // THIS IS A SINGLETON
+    static private ZaidApplication mContext;
 
-    public WarathaInput getWarathaInput() { return mInput; }
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        mContext = this;
+    }
 
-    public Massala getMassala() { return massala; }
+    static public ZaidApplication getApplication() { return mContext; }
+
+    public WarathahInput getWarathaInput() { return mInput; }
+
+    public Massala getMassala() { return mMassala; }
 
     public String hissabMawarith() {
-        massala = new Massala();
-        massala.hissabMawarith(mInput);
-        massala.printTable();
-        return massala.getSharh();
+        mMassala = new Massala();
+        mMassala.hissabMawarith(mInput);
+        return mMassala.getSharh();
     }
 
 }

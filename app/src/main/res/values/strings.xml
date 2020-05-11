@@ -1,32 +1,86 @@
+<!--
+  ~ Copyright © 2019-2020 Djalel Chefrour and the Zaid project contributors.
+  ~ This file is part of Zaid project.
+  ~
+  ~ Zaid is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Zaid is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~  along with Zaid.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
 <resources>
     <string name="app_name">زيد الفرضي</string>
+    <string name="action_about">حول</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="input_fragment_label">جزء معطيات المسألة</string>
+    <string name="output_fragment_label">جزء حل المسألة</string>
+    <string name="hal">حل المسألة</string>
+    <string name="change">تغيير المسألة</string>
+    <string name="restart">مسألة جديدة</string>
 
-    <string name="madhab">المذهب:</string>>
+    <string name="madhab">المذهب الفقهي:</string>>
     <string name="hambali">حنبلي</string>
     <string name="hanafi">حنفي</string>
     <string name="chafi3i">شافعي</string>
     <string name="maliki">مالكي</string>
-    <string name="deceased">المتوفى:</string>
-    <string name="mother_alive">هل الأم حية؟</string>
-    <string name="gender">هل الميت ذكر أم أنثى؟</string>
-    <string name="father_alive">هل الأب حي؟</string>
-    <string name="male">ذكر</string>
-    <string name="female">أنثى</string>
-    <string name="no">لا</string>
-    <string name="yes">نعم</string>
-    <string name="mother">الأم:</string>
-    <string name="father">الأب:</string>
-    <string name="grand_father">الجد:</string>
-    <string name="maternal_grand_mother">الجدة لأم:</string>
-    <string name="paternal_grand_father">الجدة لأب:</string>
-    <string name="next">التالي</string>
-    <string name="wives">الزوجات:</string>
-    <string name="husband">الزوج:</string>
-    <string name="daughters">البنات:</string>
-    <string name="sons">الأبناء:</string>
-    <string name="title_activity2">الأبناء والأحفاد</string>
-    <string name="title_activity3">الإخوة</string>
-    <string name="title_activity4">أبناء الإخوة، الأعمام وأبناء الأعمام</string>
-    <string name="title_activity_result">حل المسألة</string>
+    <string name="mutawafa">معلومات المتوفى</string>
+    <string name="dhakar">ذكر</string>
+    <string name="ontha">أنثى</string>
+    <string name="tarika">مبلغ التركة:</string>
+    <string name="alom">الأم:</string>
+    <string name="alab">الأب:</string>
+    <string name="aljad">الجد:</string>
+    <string name="aljadah_li_om">الجدة لأم:</string>
+    <string name="aljadah_li_ab">الجدة لأب:</string>
+    <string name="alhal">حل المسألة</string>
+    <string name="azawjat">الزوجات:</string>
+    <string name="azawj">الزوج:</string>
+    <string name="albanat">البنات:</string>
+    <string name="alabna">الأبناء:</string>
+    <string name="ma3lumat">معلومات المتوفى</string>
+    <string name="ussol">الأصول الأحياء</string>
+    <string name="azwaj_foro3">الأزواج والفروع الأحياء</string>
+    <string name="hawashi">الحواشي الأحياء</string>
+    <string name="alikhwa_li_om">الإخوة لأم:</string>
+    <string name="alakhawat_li_om">الأخوات لأم:</string>
+    <string name="alikhwa_alashika">الإخوة الأشقاء:</string>
+    <string name="alakhawat_ashakikat">الأخوات الشقيقات:</string>
+    <string name="alikhwa_li_ab">الإخوة لأب:</string>
+    <string name="alakhawat_li_ab">الأخوات لأب:</string>
+    <string name="abna_alikhwa_ashika">أبناء الإخوة الأشقاء:</string>
+    <string name="abna_alikhwa_li_ab">أبناء الإخوة لأب:</string>
+    <string name="ala3mam_alashika">الأعمام الأشقاء:</string>
+    <string name="ala3mam_li_ab">الأعمام لأب:</string>
+    <string name="abna_ala3mam_alashika">أبناء الأعمام الأشقاء:</string>
+    <string name="abna_ala3mam_li_ab">أبناء الأعمام لأب:</string>
+    <string name="banat_alabna">بنات الأبناء:</string>
+    <string name="abna_alabna">أبناء الأبناء:</string>
+
+
+    <string name="about"><![CDATA[
+<html>
+<head></head>
+<body style="text-align:justify;color:white;background-color:black;" dir="rtl" lang="ar">
+«زيدٌ الفرضي»" هو برنامج لحساب الفرائض وفق الشريعة الإسلامية السمحاء. يحمل هذا البرنامج اسم الصحابي الجليل زيد بن ثابت رضي الله عنه،
+ الذي قال فيه رسول الله صلى الله عليه وآله وسلم «أَفْرَضُ أُمَّتي زيد» (رواه الحاكم وقال هذا حديث صحيح على شرط الشيخين).
+تم تطوير هذا البرنامج باعتماد كتاب "الفرائض المُيسََّر" من تأليف الشيخ عبد الشكور معلم عبد فارح.
+<br/>
+هذا الإصدار من البرنامج لا يزال تجريبيا، لذا يُرجى التبليغ عن أية أخطاء فيه، لا سيما في حساب الفرائض، بمراسلة المطور على البريد الإلكتروني
+<a href="mailto:cdjalel@gmail.com" style="color:gold">cdjalel@gmail.com</a>
+<br/>
+هذا البرنامج حر، مفتوح المصدر، مجاني ومتوفر تحت رخصة غنو العمومية إصدار 3.0 GPL، حيث يمكن الحصول على مصدره من الموقع:
+<br/>
+<a href="https://github.com/cdjalel/Zaid" style="color:gold">https://github.com/cdjalel/Zaid</a>
+</body>
+</html>
+]]></string>
 
 </resources>
